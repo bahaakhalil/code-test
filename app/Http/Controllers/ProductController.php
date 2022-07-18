@@ -49,9 +49,8 @@ class ProductController extends Controller
 
         $products = new ProductCollection($data);
 
-        $pro = $products->count();
 
-        return view('products', compact('products', 'brands', 'pro'));
+        return view('products', compact('products', 'brands'));
     }
 
     /**
